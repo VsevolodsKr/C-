@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main() {
+  int n,maz;
+  cin>>n;
+  int A[n];
+  for(int i=0;i<n;i++){
+    cin>>A[i];
+  }
+  maz=A[0];
+  for(int i=1;i<n;i++){
+    if(maz>A[i])
+      maz = A[i];
+  }
+  cout<<maz;
+  return 0;
+}
